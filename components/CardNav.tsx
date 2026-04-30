@@ -77,7 +77,7 @@ const CardNav: React.FC<CardNavProps> = ({
         return topBar + contentHeight + padding;
       }
     }
-    return 260;
+    return 200;
   };
 
   const createTimeline = () => {
@@ -157,42 +157,54 @@ const CardNav: React.FC<CardNavProps> = ({
 
   return (
     <div
-      className={`card-nav-container absolute left-1/2 -translate-x-1/2 w-[90%] max-w-[800px] z-[99] top-[1.2em] md:top-[2em] ${className}`}
+      className={`card-nav-container w-full max-w-5xl mx-auto ${className}`}
     >
       <nav
         ref={navRef}
         className={`card-nav ${isExpanded ? 'open' : ''} block h-[60px] p-0 rounded-xl shadow-md relative overflow-hidden will-change-[height]`}
         style={{ backgroundColor: baseColor }}
       >
-        <div className="card-nav-top absolute inset-x-0 top-0 h-[60px] flex items-center justify-between p-2 pl-[1.1rem] z-[2]">
-          <div
-            className={`hamburger-menu ${isHamburgerOpen ? 'open' : ''} group h-full flex flex-col items-center justify-center cursor-pointer gap-[6px] order-2 md:order-none`}
-            onClick={toggleMenu}
-            role="button"
-            aria-label={isExpanded ? 'Close menu' : 'Open menu'}
-            tabIndex={0}
-            style={{ color: menuColor || '#000' }}
-          >
-            <div
-              className={`hamburger-line w-[30px] h-[2px] bg-current transition-[transform,opacity,margin] duration-300 ease-linear [transform-origin:50%_50%] ${
-                isHamburgerOpen ? 'translate-y-[4px] rotate-45' : ''
-              } group-hover:opacity-75`}
-            />
-            <div
-              className={`hamburger-line w-[30px] h-[2px] bg-current transition-[transform,opacity,margin] duration-300 ease-linear [transform-origin:50%_50%] ${
-                isHamburgerOpen ? '-translate-y-[4px] -rotate-45' : ''
-              } group-hover:opacity-75`}
-            />
+        <div className="card-nav-top flex items-center h-[60px] px-4">
+          
+          {/*Left Nav*/}
+          <div className="flex items-center">
+            <img src={logo} alt={logoAlt} className="w-16 h-16 object-cover rounded-xl" />
           </div>
 
-          <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
-            <img src={logo} alt={logoAlt} className="logo h-[28px]" />
+
+          {/*Center Nav*/}
+          <div className="flex-1 flex justify-center text-center"> 
+            <div>
+              <p className="font-semibold">Ryan Franson</p>
+              <p className="text-lg text-gray-400">IT • Cyber • Cloud • AI/ML</p>
+            </div>
+          </div>
+        
+          {/*Right Nav*/}
+          <div className="flex items-center">
+            <div
+              className={`hamburger-menu ${isHamburgerOpen ? 'open' : ''} group h-full flex flex-col items-center justify-center cursor-pointer gap-[6px] order-2 md:order-none`}
+              onClick={toggleMenu}
+              role="button"
+              aria-label={isExpanded ? 'Close menu' : 'Open menu'}
+              tabIndex={0}
+              style={{ color: menuColor || '#000' }}
+            >
+              <div
+                className={`hamburger-line w-[30px] h-[2px] bg-current transition-transform duration-300 ease-in-out [transform-origin:50%_50%] ${
+                  isHamburgerOpen ? 'translate-y-[4px] rotate-45' : ''
+                } group-hover:opacity-75`}
+              />
+              <div
+                className={`hamburger-line w-[30px] h-[2px] bg-current transition-transform duration-300 ease-in-out [transform-origin:50%_50%] ${
+                  isHamburgerOpen ? '-translate-y-[4px] -rotate-45' : ''
+                } group-hover:opacity-75`}
+              />
+            </div>
           </div>
 
-          <div>
-            <p className="font-semibold">Ryan Franson</p>
-            <p className="text-lg text-gray-400">IT • Cyber • Cloud • AI/ML</p>
-          </div>
+          
+
         </div>
 
         <div

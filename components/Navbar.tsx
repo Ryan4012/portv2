@@ -5,6 +5,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import CardNav from "./CardNav";
+import { link } from "fs";
 
     
 export default function Navbar() {
@@ -25,13 +26,12 @@ export default function Navbar() {
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Featured", href: "/projects/", ariaLabel: "Featured Projects" },
-        { label: "...", href: "https://github.com/Ryan4012", ariaLabel: "Project Case Studies" }
+        { label: "Featured", href: "/#projects", ariaLabel: "Featured Projects" }
       ]
     },
     {
       label: "Contact",
-      bgColor: "#2F293A",
+      bgColor: "#4A4458",
       textColor: "#fff",
       links: [
         { label: "LinkedIn", href: "https://linkedin.com/in/ryan-franson", ariaLabel: "LinkedIn" },
@@ -41,7 +41,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+    <nav className="border-b border-gray-800 py-4">
       
       {/* Left 
       <div className="flex items-center gap-4">
