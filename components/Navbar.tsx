@@ -14,7 +14,7 @@ export default function Navbar() {
   const items = [
     {
       label: "Home",
-      bgColor: "#1B1722",
+      bgColor: "#1B1722", 
       textColor: "#fff",
       links: [
         { label: "About", href: "/#about", ariaLabel: "About Me" },
