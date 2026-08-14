@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
 
-      <section id="expeerience">
+      <section id="experience">
 
       </section>
 
@@ -129,7 +129,7 @@ export default function Home() {
 
       </section>
 
-      
+
       
 
     </div>
