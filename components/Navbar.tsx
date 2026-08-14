@@ -14,17 +14,16 @@ export default function Navbar() {
   const items = [
     {
       label: "Home",
-      bgColor: "#1B1722", 
+      bgColor: "#4A4458", 
       textColor: "#fff",
       links: [
         { label: "About", href: "/#about", ariaLabel: "About Me" },
         { label: "Experience", href:"/#experience", ariaLabel: "About Careers"},
-        { label: "Resume", href: "/resume", ariaLabel: "About Career" }
       ]
     },
     {
       label: "Projects & Skills",
-      bgColor: "#2F293A",
+      bgColor: "#4A4458",
       textColor: "#fff",
       links: [
         { label: "Featured", href: "/#projects", ariaLabel: "Featured Projects" },
