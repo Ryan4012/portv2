@@ -5,7 +5,7 @@ export default function Home() {
     <div className="space-y-12">
 
       {/* About */}
-      <section>
+      <section id="about">
         <h2 className="text-3xl font-semibold">About Me</h2>
         <p className="mt-4 text-gray-400 max-w-2xl">
         Hi, I'm Ryan and welcome to my website! I'm currently studying Computer Science at CSUF with a concentration in Cybersecurity. Through projects like building a Home SOC Lab, setting up an Active Directory environment, and running vulnerability management testing, I've gained hands-on experience with tools such as Oracle VirtualBox, PowerShell, Azure Services, KQL, VMware, and Nessus Essentials. Alongside my studies, I've always valued teamwork and perseverance which are qualities I built over 11 years of playing baseball. The lessons I learned on the field about discipline, communication, and working toward a common goal carry over into my approach to solving technical challenges and collaborating with others in the world of technology.
@@ -119,6 +119,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+      <section id="expeerience">
+
+      </section>
+
+      <section id="skills">
+
+      </section>
+
+      
       
 
     </div>
