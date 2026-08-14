@@ -80,9 +80,9 @@ export default function Home() {
       </div>
 
       {/* Highlights */}
-      <section id="experience" className="grid md:grid-cols-2 gap-6">
-
       <h1 className="text-3xl font-semibold">Experience</h1>
+
+      <section id="experience" className="grid md:grid-cols-2 gap-6">
 
         <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50">
           <h3 className="text-xl font-semibold mb-3">Career</h3>
