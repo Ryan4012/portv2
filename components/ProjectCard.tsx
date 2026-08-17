@@ -1,12 +1,14 @@
 type Props = {
     title: string;
     description: string;
+    subdescription: string;
     href: string;
     variant: "it" | "cyber" | "cloud" | "dev";
     tech?: string[];
+    click: string;
   };
   
-export default function ProjectCard({ title, description, href, variant, tech }: Props) {
+export default function ProjectCard({ title, description,subdescription, href, variant, tech, click }: Props) {
   const styles = {
     it: "border-blue-600 hover:shadow-blue-500/20",
     cyber: "border-red-500 hover:shadow-red-500/20",
@@ -24,6 +26,14 @@ export default function ProjectCard({ title, description, href, variant, tech }:
       <p className="mt-2 text-sm text-gray-400">
         {description}
       </p>
+      <p className="mt-2 text-sm text-gray-400">
+        {subdescription}
+      </p>
+
+      <p className="mt-2 text-sm text white">
+        {click}
+      </p>
+      
 
       {tech && (
         <div className="mt-4 flex flex-wrap gap-2">

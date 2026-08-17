@@ -17,17 +17,16 @@ export default function Navbar() {
       bgColor: "#4A4458", 
       textColor: "#fff",
       links: [
-        { label: "About", href: "/#about", ariaLabel: "About Me" },
+        { label: "About", href: "/#hero", ariaLabel: "About Me" },
         { label: "Experience", href:"/#experience", ariaLabel: "About Careers"},
       ]
     },
     {
-      label: "Projects & Skills",
+      label: "Projects",
       bgColor: "#4A4458",
       textColor: "#fff",
       links: [
-        { label: "Featured", href: "/#projects", ariaLabel: "Featured Projects" },
-        { label: "Skills", href: "/#skills", ariaLabel: "Featured Skills" }
+        { label: "Featured", href: "/#projects", ariaLabel: "Featured Projects" }
       ]
     },
     {
