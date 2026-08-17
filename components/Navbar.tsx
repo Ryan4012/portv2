@@ -17,7 +17,7 @@ export default function Navbar() {
       bgColor: "#4A4458", 
       textColor: "#fff",
       links: [
-        { label: "About", href: "/#hero", ariaLabel: "About Me" },
+        { label: "About", href: "/#about", ariaLabel: "About Me" },
         { label: "Experience", href:"/#experience", ariaLabel: "About Careers"},
       ]
     },

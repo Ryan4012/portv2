@@ -4,20 +4,12 @@ export default function Home() {
   return (
     <div className="space-y-12">
 
-      {/* Hero */}
-      <section id="hero">
-      <h2 className="text-3xl font-semibold">Hero</h2>
-        <p className="mt-4 text-gray-400 max-w-2xl">
-        Computer Science student focused on cybersecurity, infrastructure, cloud technologies, and automation. I enjoy building hands-on systems to understand how technology works from the network and operating system level through applications and security.
-
-        </p>
-      </section>
-
+   
       {/* About */}
       <section id="about">
         <h2 className="text-3xl font-semibold">About</h2>
         <p className="mt-4 text-gray-400 max-w-2xl">
-          I'm a Computer Science student at California State University, Fullerton, concentrating in Cybersecurity. My interests sit at the intersection of cybersecurity, infrastructure, networking, cloud computing, and automation.
+          I'm a Computer Science student at California State University, Fullerton, concentrating in Cybersecurity. My interests sit at the intersection of cybersecurity, infrastructure, networking, cloud computing, and automation. I enjoy building hands-on systems to understand how technology works from the network and operating system level through applications and security.
           <br /><br />
           Much of my technical experience comes from building hands-on environments outside the classroom. I've worked with virtualized systems, cloud security environments, network segmentation, Linux, Docker, Active Directory, vulnerability management, and security monitoring.
           <br /><br />
