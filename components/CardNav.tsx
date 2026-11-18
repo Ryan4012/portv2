@@ -168,7 +168,7 @@ const CardNav: React.FC<CardNavProps> = ({
           
           {/*Left Nav*/}
           <div className="flex items-center">
-            <img src={logo} alt={logoAlt} className="w-16 h-16 object-cover rounded-xl" />
+            <img src={logo} alt={logoAlt} className="w-14 h-14 object-cover rounded-xl" />
           </div>
 
 
