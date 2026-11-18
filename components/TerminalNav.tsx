@@ -20,19 +20,19 @@ const destinations = [
     label: "Experience",
     description: "Professional experience and work",
     command: "experience",
-    href: "/experience",
+    href: "/#experience",
   },
   {
     label: "Technical Skills",
     description: "Technologies and competencies",
     command: "skills",
-    href: "/skills",
+    href: "/#skills",
   },
   {
     label: "Contact",
     description: "Contact information and links",
     command: "contact",
-    href: "/contact",
+    href: "/#contact",
   },
 ];
 

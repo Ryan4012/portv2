@@ -128,40 +128,112 @@ export default function Home() {
           </ul>
 
           <br></br>
-
-          <h2>Technical Development</h2>
+          
+          <h2 className="text-xl font-semibold mb-3">Technical Development</h2>
           <ul className="space-y-2 text-gray-300">
-            <li>Offensive Security Society at CSUF - Applied Independent Study through Workshops and Labs</li>
-            <li>CompTIA A+, Security+, and Network+ Curriculum from Professor Messer</li>
+            <li>
+              <strong className="text-white">Offensive Security Society (OSS) – CSUF | Purple Team, Infrastructure</strong>
+              <p className="text-sm text-gray-400">
+                Hands-on infrastructure development, Docker services, Ansible automation, and cyber-range environments.
+              </p>
+            </li>
+            <li>
+              <strong className="text-white">CompTIA Certification Preparation</strong>
+              <p className="text-sm text-gray-400">
+                A+, Network+, and Security+ curriculum through Professor Messer.
+              </p>
+            </li>
           </ul>
 
-          <br></br>
-          <h2>Certifications</h2>
+          <br />
+
+          <h2 className="text-xl font-semibold mb-3">Certifications</h2>
           <ul className="space-y-2 text-gray-300">
-            <li>...</li>
+            <li>
+              Google IT Support Professional Certificate – Google / Coursera
+            </li>
           </ul>
 
         </div>
 
       </section>
 
-      {/* 
+      {/* Skills */}
       <section id="skills">
+          
+        <h1 className="text-3xl font-semibold my-8">Skills</h1>
 
-      <h1 className="text-3xl font-semibold my-8">Skills</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-        <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50">
-          <h3 className="text-xl font-semibold mb-3">Tools & Technologies</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-            <li>...</li>
-          </ul>
+          {/* Systems & Infrastructure */}
+          <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50">
+            <h3 className="text-xl font-semibold mb-4">Systems & Infrastructure</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Linux (Debian, Ubuntu)</li>
+              <li>• Windows Server & Active Directory</li>
+              <li>• Proxmox & Virtualization</li>
+              <li>• Docker & Containerization</li>
+              <li>• Server Deployment & Management</li>
+              <li>• Hardware & Asset Management</li>
+            </ul>
+          </div>
+
+          {/* Networking & Security */}
+          <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50">
+            <h3 className="text-xl font-semibold mb-4">Networking & Security</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• TCP/IP, DNS, DHCP</li>
+              <li>• VLANs & Network Segmentation</li>
+              <li>• Network Troubleshooting</li>
+              <li>• Active Directory & Access Control</li>
+              <li>• Vulnerability Assessment (Nessus)</li>
+              <li>• SIEM & Security Monitoring</li>
+            </ul>
+          </div>
+
+          {/* Cloud & DevOps */}
+          <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50">
+            <h3 className="text-xl font-semibold mb-4">Cloud & DevOps</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• AWS (EC2)</li>
+              <li>• Microsoft Azure</li>
+              <li>• Terraform & Infrastructure as Code</li>
+              <li>• Ansible & Configuration Management</li>
+              <li>• Git & CI/CD</li>
+              <li>• Kubernetes / k3s</li>
+            </ul>
+          </div>
+
+          {/* Programming & Automation */}
+          <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50">
+            <h3 className="text-xl font-semibold mb-4">Programming & Automation</h3>
+            <ul className="space-y-2 text-gray-300 text-sm">
+              <li>• Python</li>
+              <li>• Bash / Shell Scripting</li>
+              <li>• Java</li>
+              <li>• JavaScript / TypeScript</li>
+              <li>• SQL & PostgreSQL</li>
+              <li>• REST APIs & Webhooks</li>
+            </ul>
+          </div>
+
+          {/* Monitoring & Observability */}
+          <div className="p-6 rounded-xl border border-gray-800 bg-neutral-900/50 md:col-span-2">
+            <h3 className="text-xl font-semibold mb-4">Monitoring & Observability</h3>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-gray-300 text-sm">
+              <li>• Grafana</li>
+              <li>• Prometheus</li>
+              <li>• Uptime Kuma</li>
+              <li>• Node Exporter</li>
+              <li>• Log & Metrics Monitoring</li>
+              <li>• Incident Tracking & Escalation</li>
+            </ul>
+          </div>
+
         </div>
 
       </section>
-      */}
+      
 
       
 
